@@ -1,0 +1,993 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BED64D602E1A9BA6001162E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BED64D5C2E1A9BA6001162E2 /* Assets.xcassets */; };
+		BED64D622E1A9BA6001162E2 /* VibesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64D5E2E1A9BA6001162E2 /* VibesApp.swift */; };
+		BED64D6C2E1A9BFD001162E2 /* vibes_mock.json in Resources */ = {isa = PBXBuildFile; fileRef = BED64D6B2E1A9BFD001162E2 /* vibes_mock.json */; };
+		BED64D6E2E1A9C19001162E2 /* Vibe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64D6D2E1A9C18001162E2 /* Vibe.swift */; };
+		BED64D712E1A9C2F001162E2 /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64D702E1A9C2E001162E2 /* UserDefaults+Extensions.swift */; };
+		BED64D732E1A9C3A001162E2 /* Decodable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64D722E1A9C39001162E2 /* Decodable+Extensions.swift */; };
+		BED64D752E1A9C44001162E2 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64D742E1A9C43001162E2 /* Date+Extensions.swift */; };
+		BED64D772E1A9C4E001162E2 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64D762E1A9C4D001162E2 /* Data+Extensions.swift */; };
+		BED64D7A2E1A9C60001162E2 /* DeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64D792E1A9C5F001162E2 /* DeepLink.swift */; };
+		BED64D7E2E1A9C79001162E2 /* AppGroupStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64D7D2E1A9C78001162E2 /* AppGroupStorage.swift */; };
+		BED64D802E1A9C87001162E2 /* WidgetStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64D7F2E1A9C86001162E2 /* WidgetStorage.swift */; };
+		BED64D832E1A9C9E001162E2 /* VibeStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64D822E1A9C9D001162E2 /* VibeStorage.swift */; };
+		BED64D852E1A9CB5001162E2 /* VibeDefaultStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64D842E1A9CB4001162E2 /* VibeDefaultStorage.swift */; };
+		BED64D892E1A9CE8001162E2 /* VibeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64D882E1A9CE7001162E2 /* VibeService.swift */; };
+		BED64D8B2E1A9CF5001162E2 /* VibeMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64D8A2E1A9CF4001162E2 /* VibeMockService.swift */; };
+		BED64D8F2E1A9D14001162E2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64D8E2E1A9D13001162E2 /* Router.swift */; };
+		BED64D922E1A9D2F001162E2 /* VibesRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64D912E1A9D2E001162E2 /* VibesRoute.swift */; };
+		BED64D942E1A9D38001162E2 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64D932E1A9D38001162E2 /* Route.swift */; };
+		BED64D982E1A9D5A001162E2 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64D972E1A9D5A001162E2 /* Response.swift */; };
+		BED64D9B2E1A9D6A001162E2 /* RecordsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64D9A2E1A9D6A001162E2 /* RecordsEntity.swift */; };
+		BED64D9D2E1A9D79001162E2 /* VibeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64D9C2E1A9D78001162E2 /* VibeEntity.swift */; };
+		BED64DA52E1A9DDA001162E2 /* VibesView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64DA42E1A9DD0001162E2 /* VibesView+ViewModel.swift */; };
+		BED64DA72E1A9DF1001162E2 /* VibesNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64DA62E1A9DF0001162E2 /* VibesNavigation.swift */; };
+		BED64DA92E1A9DFE001162E2 /* VibesHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64DA82E1A9DFD001162E2 /* VibesHeader.swift */; };
+		BED64DAB2E1A9E0D001162E2 /* VibesGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64DAA2E1A9E0C001162E2 /* VibesGrid.swift */; };
+		BED64DAF2E1A9E29001162E2 /* VibesItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64DAE2E1A9E28001162E2 /* VibesItem.swift */; };
+		BED64DB12E1A9E3D001162E2 /* VibesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64DB02E1A9E3C001162E2 /* VibesView.swift */; };
+		BED64DB52E1A9E63001162E2 /* VibeNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64DB42E1A9E61001162E2 /* VibeNavigation.swift */; };
+		BED64DB72E1A9E76001162E2 /* VibeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64DB62E1A9E75001162E2 /* VibeHeader.swift */; };
+		BED64DBA2E1A9E8C001162E2 /* VibeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64DB92E1A9E8B001162E2 /* VibeView.swift */; };
+		BED64DC32E1A9F24001162E2 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED64DC22E1A9F24001162E2 /* WidgetKit.framework */; };
+		BED64DC52E1A9F24001162E2 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED64DC42E1A9F24001162E2 /* SwiftUI.framework */; };
+		BED64DD02E1A9F25001162E2 /* VibeWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BED64DC02E1A9F24001162E2 /* VibeWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BED64DDB2E1A9F2A001162E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BED64DD62E1A9F2A001162E2 /* Assets.xcassets */; };
+		BED64DE12E1A9FB4001162E2 /* ClockHandRotationEffect.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED64DE02E1A9FB4001162E2 /* ClockHandRotationEffect.xcframework */; };
+		BED64DE22E1A9FB4001162E2 /* ClockHandRotationEffect.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BED64DE02E1A9FB4001162E2 /* ClockHandRotationEffect.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BED64DE62E1A9FD7001162E2 /* AnimatedEmojiText.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64DE52E1A9FD6001162E2 /* AnimatedEmojiText.swift */; };
+		BED64DE82E1A9FE2001162E2 /* EmojiText.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64DE72E1A9FE1001162E2 /* EmojiText.swift */; };
+		BED64DEC2E1AA019001162E2 /* Vibe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64DEB2E1AA019001162E2 /* Vibe.swift */; };
+		BED64DF02E1AA03A001162E2 /* UserDefaults+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64DEF2E1AA039001162E2 /* UserDefaults+Extensions.swift */; };
+		BED64DF22E1AA046001162E2 /* Decodable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64DF12E1AA045001162E2 /* Decodable+Extensions.swift */; };
+		BED64DF52E1AA070001162E2 /* AppGroupStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64DF42E1AA06F001162E2 /* AppGroupStorage.swift */; };
+		BED64DF92E1AA08C001162E2 /* RecordsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64DF82E1AA08B001162E2 /* RecordsEntity.swift */; };
+		BED64DFB2E1AA096001162E2 /* VibeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64DFA2E1AA096001162E2 /* VibeEntity.swift */; };
+		BED64DFE2E1AA0B4001162E2 /* VibeWidget+EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64DFD2E1AA0B3001162E2 /* VibeWidget+EntryView.swift */; };
+		BED64E002E1AA0D2001162E2 /* VibeWidget+Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64DFF2E1AA0D1001162E2 /* VibeWidget+Provider.swift */; };
+		BED64E022E1AA0E9001162E2 /* VibeWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64E012E1AA0E7001162E2 /* VibeWidgetBundle.swift */; };
+		BED64E042E1AA100001162E2 /* VibeWidget+Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64E032E1AA0FF001162E2 /* VibeWidget+Entry.swift */; };
+		BED64E062E1AA111001162E2 /* VibeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED64E052E1AA110001162E2 /* VibeWidget.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BED64DCE2E1A9F25001162E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BED64D462E1A9B99001162E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BED64DBF2E1A9F24001162E2;
+			remoteInfo = VibeWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BED64DD52E1A9F25001162E2 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BED64DD02E1A9F25001162E2 /* VibeWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED64DE32E1A9FB4001162E2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BED64DE22E1A9FB4001162E2 /* ClockHandRotationEffect.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BED64D4E2E1A9B99001162E2 /* Vibes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vibes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BED64D5C2E1A9BA6001162E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BED64D5E2E1A9BA6001162E2 /* VibesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibesApp.swift; sourceTree = "<group>"; };
+		BED64D6B2E1A9BFD001162E2 /* vibes_mock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = vibes_mock.json; sourceTree = "<group>"; };
+		BED64D6D2E1A9C18001162E2 /* Vibe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vibe.swift; sourceTree = "<group>"; };
+		BED64D702E1A9C2E001162E2 /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
+		BED64D722E1A9C39001162E2 /* Decodable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+Extensions.swift"; sourceTree = "<group>"; };
+		BED64D742E1A9C43001162E2 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		BED64D762E1A9C4D001162E2 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		BED64D792E1A9C5F001162E2 /* DeepLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLink.swift; sourceTree = "<group>"; };
+		BED64D7D2E1A9C78001162E2 /* AppGroupStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroupStorage.swift; sourceTree = "<group>"; };
+		BED64D7F2E1A9C86001162E2 /* WidgetStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetStorage.swift; sourceTree = "<group>"; };
+		BED64D822E1A9C9D001162E2 /* VibeStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibeStorage.swift; sourceTree = "<group>"; };
+		BED64D842E1A9CB4001162E2 /* VibeDefaultStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibeDefaultStorage.swift; sourceTree = "<group>"; };
+		BED64D882E1A9CE7001162E2 /* VibeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibeService.swift; sourceTree = "<group>"; };
+		BED64D8A2E1A9CF4001162E2 /* VibeMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibeMockService.swift; sourceTree = "<group>"; };
+		BED64D8E2E1A9D13001162E2 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		BED64D912E1A9D2E001162E2 /* VibesRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibesRoute.swift; sourceTree = "<group>"; };
+		BED64D932E1A9D38001162E2 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		BED64D972E1A9D5A001162E2 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		BED64D9A2E1A9D6A001162E2 /* RecordsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsEntity.swift; sourceTree = "<group>"; };
+		BED64D9C2E1A9D78001162E2 /* VibeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibeEntity.swift; sourceTree = "<group>"; };
+		BED64DA42E1A9DD0001162E2 /* VibesView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VibesView+ViewModel.swift"; sourceTree = "<group>"; };
+		BED64DA62E1A9DF0001162E2 /* VibesNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibesNavigation.swift; sourceTree = "<group>"; };
+		BED64DA82E1A9DFD001162E2 /* VibesHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibesHeader.swift; sourceTree = "<group>"; };
+		BED64DAA2E1A9E0C001162E2 /* VibesGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibesGrid.swift; sourceTree = "<group>"; };
+		BED64DAE2E1A9E28001162E2 /* VibesItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibesItem.swift; sourceTree = "<group>"; };
+		BED64DB02E1A9E3C001162E2 /* VibesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibesView.swift; sourceTree = "<group>"; };
+		BED64DB42E1A9E61001162E2 /* VibeNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibeNavigation.swift; sourceTree = "<group>"; };
+		BED64DB62E1A9E75001162E2 /* VibeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibeHeader.swift; sourceTree = "<group>"; };
+		BED64DB92E1A9E8B001162E2 /* VibeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibeView.swift; sourceTree = "<group>"; };
+		BED64DBB2E1A9EC9001162E2 /* Vibes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Vibes.entitlements; sourceTree = "<group>"; };
+		BED64DC02E1A9F24001162E2 /* VibeWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = VibeWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BED64DC22E1A9F24001162E2 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		BED64DC42E1A9F24001162E2 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		BED64DD62E1A9F2A001162E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BED64DD72E1A9F2A001162E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BED64DDF2E1A9F61001162E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BED64DE02E1A9FB4001162E2 /* ClockHandRotationEffect.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ClockHandRotationEffect.xcframework; path = Frameworks/ClockHandRotationEffect.xcframework; sourceTree = "<group>"; };
+		BED64DE52E1A9FD6001162E2 /* AnimatedEmojiText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedEmojiText.swift; sourceTree = "<group>"; };
+		BED64DE72E1A9FE1001162E2 /* EmojiText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiText.swift; sourceTree = "<group>"; };
+		BED64DEB2E1AA019001162E2 /* Vibe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vibe.swift; sourceTree = "<group>"; };
+		BED64DEF2E1AA039001162E2 /* UserDefaults+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extensions.swift"; sourceTree = "<group>"; };
+		BED64DF12E1AA045001162E2 /* Decodable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+Extensions.swift"; sourceTree = "<group>"; };
+		BED64DF42E1AA06F001162E2 /* AppGroupStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroupStorage.swift; sourceTree = "<group>"; };
+		BED64DF82E1AA08B001162E2 /* RecordsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsEntity.swift; sourceTree = "<group>"; };
+		BED64DFA2E1AA096001162E2 /* VibeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibeEntity.swift; sourceTree = "<group>"; };
+		BED64DFD2E1AA0B3001162E2 /* VibeWidget+EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VibeWidget+EntryView.swift"; sourceTree = "<group>"; };
+		BED64DFF2E1AA0D1001162E2 /* VibeWidget+Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VibeWidget+Provider.swift"; sourceTree = "<group>"; };
+		BED64E012E1AA0E7001162E2 /* VibeWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibeWidgetBundle.swift; sourceTree = "<group>"; };
+		BED64E032E1AA0FF001162E2 /* VibeWidget+Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VibeWidget+Entry.swift"; sourceTree = "<group>"; };
+		BED64E052E1AA110001162E2 /* VibeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibeWidget.swift; sourceTree = "<group>"; };
+		BED64E082E1AA196001162E2 /* VibeWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VibeWidgetExtension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BED64D4B2E1A9B99001162E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED64DBD2E1A9F24001162E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BED64DC52E1A9F24001162E2 /* SwiftUI.framework in Frameworks */,
+				BED64DE12E1A9FB4001162E2 /* ClockHandRotationEffect.xcframework in Frameworks */,
+				BED64DC32E1A9F24001162E2 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BED64D452E1A9B99001162E2 = {
+			isa = PBXGroup;
+			children = (
+				BED64D5F2E1A9BA6001162E2 /* Vibes */,
+				BED64DDA2E1A9F2A001162E2 /* VibeWidget */,
+				BED64DC12E1A9F24001162E2 /* Frameworks */,
+				BED64D4F2E1A9B99001162E2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BED64D4F2E1A9B99001162E2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BED64D4E2E1A9B99001162E2 /* Vibes.app */,
+				BED64DC02E1A9F24001162E2 /* VibeWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BED64D5F2E1A9BA6001162E2 /* Vibes */ = {
+			isa = PBXGroup;
+			children = (
+				BED64DDF2E1A9F61001162E2 /* Info.plist */,
+				BED64DBB2E1A9EC9001162E2 /* Vibes.entitlements */,
+				BED64E082E1AA196001162E2 /* VibeWidgetExtension.entitlements */,
+				BED64D632E1A9BB3001162E2 /* UI */,
+				BED64D642E1A9BBA001162E2 /* App */,
+				BED64D652E1A9BC2001162E2 /* Core */,
+				BED64D662E1A9BCA001162E2 /* Models */,
+				BED64D672E1A9BD3001162E2 /* Resources */,
+			);
+			path = Vibes;
+			sourceTree = "<group>";
+		};
+		BED64D632E1A9BB3001162E2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BED64D9F2E1A9DA3001162E2 /* Views */,
+				BED64D9E2E1A9D9C001162E2 /* Components */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		BED64D642E1A9BBA001162E2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BED64D5E2E1A9BA6001162E2 /* VibesApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BED64D652E1A9BC2001162E2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BED64D952E1A9D4D001162E2 /* Data */,
+				BED64D8C2E1A9D05001162E2 /* Routing */,
+				BED64D862E1A9CD3001162E2 /* Services */,
+				BED64D7B2E1A9C6A001162E2 /* Storages */,
+				BED64D782E1A9C59001162E2 /* DeepLink */,
+				BED64D6F2E1A9C27001162E2 /* Extensions */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		BED64D662E1A9BCA001162E2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BED64D6D2E1A9C18001162E2 /* Vibe.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BED64D672E1A9BD3001162E2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BED64D682E1A9BDF001162E2 /* JSON */,
+				BED64D5C2E1A9BA6001162E2 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BED64D682E1A9BDF001162E2 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				BED64D6B2E1A9BFD001162E2 /* vibes_mock.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		BED64D6F2E1A9C27001162E2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BED64D762E1A9C4D001162E2 /* Data+Extensions.swift */,
+				BED64D742E1A9C43001162E2 /* Date+Extensions.swift */,
+				BED64D722E1A9C39001162E2 /* Decodable+Extensions.swift */,
+				BED64D702E1A9C2E001162E2 /* UserDefaults+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BED64D782E1A9C59001162E2 /* DeepLink */ = {
+			isa = PBXGroup;
+			children = (
+				BED64D792E1A9C5F001162E2 /* DeepLink.swift */,
+			);
+			path = DeepLink;
+			sourceTree = "<group>";
+		};
+		BED64D7B2E1A9C6A001162E2 /* Storages */ = {
+			isa = PBXGroup;
+			children = (
+				BED64D812E1A9C93001162E2 /* Vibe */,
+				BED64D7C2E1A9C70001162E2 /* Bases */,
+			);
+			path = Storages;
+			sourceTree = "<group>";
+		};
+		BED64D7C2E1A9C70001162E2 /* Bases */ = {
+			isa = PBXGroup;
+			children = (
+				BED64D7F2E1A9C86001162E2 /* WidgetStorage.swift */,
+				BED64D7D2E1A9C78001162E2 /* AppGroupStorage.swift */,
+			);
+			path = Bases;
+			sourceTree = "<group>";
+		};
+		BED64D812E1A9C93001162E2 /* Vibe */ = {
+			isa = PBXGroup;
+			children = (
+				BED64D822E1A9C9D001162E2 /* VibeStorage.swift */,
+				BED64D842E1A9CB4001162E2 /* VibeDefaultStorage.swift */,
+			);
+			path = Vibe;
+			sourceTree = "<group>";
+		};
+		BED64D862E1A9CD3001162E2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BED64D872E1A9CE1001162E2 /* Vibe */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BED64D872E1A9CE1001162E2 /* Vibe */ = {
+			isa = PBXGroup;
+			children = (
+				BED64D882E1A9CE7001162E2 /* VibeService.swift */,
+				BED64D8A2E1A9CF4001162E2 /* VibeMockService.swift */,
+			);
+			path = Vibe;
+			sourceTree = "<group>";
+		};
+		BED64D8C2E1A9D05001162E2 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				BED64D902E1A9D26001162E2 /* Routes */,
+				BED64D8D2E1A9D10001162E2 /* Routers */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		BED64D8D2E1A9D10001162E2 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				BED64D8E2E1A9D13001162E2 /* Router.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		BED64D902E1A9D26001162E2 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				BED64D932E1A9D38001162E2 /* Route.swift */,
+				BED64D912E1A9D2E001162E2 /* VibesRoute.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		BED64D952E1A9D4D001162E2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BED64D992E1A9D64001162E2 /* Entities */,
+				BED64D962E1A9D52001162E2 /* Responses */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BED64D962E1A9D52001162E2 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				BED64D972E1A9D5A001162E2 /* Response.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		BED64D992E1A9D64001162E2 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BED64D9C2E1A9D78001162E2 /* VibeEntity.swift */,
+				BED64D9A2E1A9D6A001162E2 /* RecordsEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		BED64D9E2E1A9D9C001162E2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		BED64D9F2E1A9DA3001162E2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BED64DB22E1A9E51001162E2 /* Vibe */,
+				BED64DA02E1A9DAF001162E2 /* Vibes */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BED64DA02E1A9DAF001162E2 /* Vibes */ = {
+			isa = PBXGroup;
+			children = (
+				BED64DA32E1A9DC5001162E2 /* View */,
+				BED64DA22E1A9DBD001162E2 /* Views */,
+				BED64DA12E1A9DB7001162E2 /* ViewModel */,
+			);
+			path = Vibes;
+			sourceTree = "<group>";
+		};
+		BED64DA12E1A9DB7001162E2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BED64DA42E1A9DD0001162E2 /* VibesView+ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BED64DA22E1A9DBD001162E2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BED64DAE2E1A9E28001162E2 /* VibesItem.swift */,
+				BED64DAA2E1A9E0C001162E2 /* VibesGrid.swift */,
+				BED64DA82E1A9DFD001162E2 /* VibesHeader.swift */,
+				BED64DA62E1A9DF0001162E2 /* VibesNavigation.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BED64DA32E1A9DC5001162E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BED64DB02E1A9E3C001162E2 /* VibesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BED64DB22E1A9E51001162E2 /* Vibe */ = {
+			isa = PBXGroup;
+			children = (
+				BED64DB82E1A9E84001162E2 /* View */,
+				BED64DB32E1A9E5D001162E2 /* Views */,
+			);
+			path = Vibe;
+			sourceTree = "<group>";
+		};
+		BED64DB32E1A9E5D001162E2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BED64DB62E1A9E75001162E2 /* VibeHeader.swift */,
+				BED64DB42E1A9E61001162E2 /* VibeNavigation.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BED64DB82E1A9E84001162E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BED64DB92E1A9E8B001162E2 /* VibeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BED64DC12E1A9F24001162E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BED64DE02E1A9FB4001162E2 /* ClockHandRotationEffect.xcframework */,
+				BED64DC22E1A9F24001162E2 /* WidgetKit.framework */,
+				BED64DC42E1A9F24001162E2 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BED64DDA2E1A9F2A001162E2 /* VibeWidget */ = {
+			isa = PBXGroup;
+			children = (
+				BED64DED2E1AA02A001162E2 /* Core */,
+				BED64DEA2E1AA011001162E2 /* Models */,
+				BED64E072E1AA129001162E2 /* Resources */,
+				BED64DE42E1A9FCD001162E2 /* Components */,
+				BED64E052E1AA110001162E2 /* VibeWidget.swift */,
+				BED64E032E1AA0FF001162E2 /* VibeWidget+Entry.swift */,
+				BED64E012E1AA0E7001162E2 /* VibeWidgetBundle.swift */,
+				BED64DFF2E1AA0D1001162E2 /* VibeWidget+Provider.swift */,
+				BED64DFD2E1AA0B3001162E2 /* VibeWidget+EntryView.swift */,
+			);
+			path = VibeWidget;
+			sourceTree = "<group>";
+		};
+		BED64DE42E1A9FCD001162E2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BED64DE72E1A9FE1001162E2 /* EmojiText.swift */,
+				BED64DE52E1A9FD6001162E2 /* AnimatedEmojiText.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		BED64DEA2E1AA011001162E2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BED64DEB2E1AA019001162E2 /* Vibe.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BED64DED2E1AA02A001162E2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BED64DF62E1AA07D001162E2 /* Data */,
+				BED64DF32E1AA069001162E2 /* Storages */,
+				BED64DEE2E1AA033001162E2 /* Extensions */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		BED64DEE2E1AA033001162E2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BED64DF12E1AA045001162E2 /* Decodable+Extensions.swift */,
+				BED64DEF2E1AA039001162E2 /* UserDefaults+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BED64DF32E1AA069001162E2 /* Storages */ = {
+			isa = PBXGroup;
+			children = (
+				BED64DF42E1AA06F001162E2 /* AppGroupStorage.swift */,
+			);
+			path = Storages;
+			sourceTree = "<group>";
+		};
+		BED64DF62E1AA07D001162E2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BED64DF72E1AA085001162E2 /* Entities */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BED64DF72E1AA085001162E2 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BED64DFA2E1AA096001162E2 /* VibeEntity.swift */,
+				BED64DF82E1AA08B001162E2 /* RecordsEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		BED64E072E1AA129001162E2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BED64DD72E1A9F2A001162E2 /* Info.plist */,
+				BED64DD62E1A9F2A001162E2 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BED64D4D2E1A9B99001162E2 /* Vibes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BED64D592E1A9B9A001162E2 /* Build configuration list for PBXNativeTarget "Vibes" */;
+			buildPhases = (
+				BED64D4A2E1A9B99001162E2 /* Sources */,
+				BED64D4B2E1A9B99001162E2 /* Frameworks */,
+				BED64D4C2E1A9B99001162E2 /* Resources */,
+				BED64DD52E1A9F25001162E2 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BED64DCF2E1A9F25001162E2 /* PBXTargetDependency */,
+			);
+			name = Vibes;
+			packageProductDependencies = (
+			);
+			productName = Vibes;
+			productReference = BED64D4E2E1A9B99001162E2 /* Vibes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BED64DBF2E1A9F24001162E2 /* VibeWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BED64DD22E1A9F25001162E2 /* Build configuration list for PBXNativeTarget "VibeWidgetExtension" */;
+			buildPhases = (
+				BED64DBC2E1A9F24001162E2 /* Sources */,
+				BED64DBD2E1A9F24001162E2 /* Frameworks */,
+				BED64DBE2E1A9F24001162E2 /* Resources */,
+				BED64DE32E1A9FB4001162E2 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VibeWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = VibeWidgetExtension;
+			productReference = BED64DC02E1A9F24001162E2 /* VibeWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BED64D462E1A9B99001162E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					BED64D4D2E1A9B99001162E2 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					BED64DBF2E1A9F24001162E2 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = BED64D492E1A9B99001162E2 /* Build configuration list for PBXProject "Vibes" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BED64D452E1A9B99001162E2;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BED64D4F2E1A9B99001162E2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BED64D4D2E1A9B99001162E2 /* Vibes */,
+				BED64DBF2E1A9F24001162E2 /* VibeWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BED64D4C2E1A9B99001162E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BED64D602E1A9BA6001162E2 /* Assets.xcassets in Resources */,
+				BED64D6C2E1A9BFD001162E2 /* vibes_mock.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED64DBE2E1A9F24001162E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BED64DDB2E1A9F2A001162E2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BED64D4A2E1A9B99001162E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BED64DA72E1A9DF1001162E2 /* VibesNavigation.swift in Sources */,
+				BED64D772E1A9C4E001162E2 /* Data+Extensions.swift in Sources */,
+				BED64D9D2E1A9D79001162E2 /* VibeEntity.swift in Sources */,
+				BED64D892E1A9CE8001162E2 /* VibeService.swift in Sources */,
+				BED64D922E1A9D2F001162E2 /* VibesRoute.swift in Sources */,
+				BED64DAF2E1A9E29001162E2 /* VibesItem.swift in Sources */,
+				BED64DBA2E1A9E8C001162E2 /* VibeView.swift in Sources */,
+				BED64D982E1A9D5A001162E2 /* Response.swift in Sources */,
+				BED64D832E1A9C9E001162E2 /* VibeStorage.swift in Sources */,
+				BED64D622E1A9BA6001162E2 /* VibesApp.swift in Sources */,
+				BED64DAB2E1A9E0D001162E2 /* VibesGrid.swift in Sources */,
+				BED64D712E1A9C2F001162E2 /* UserDefaults+Extensions.swift in Sources */,
+				BED64DA52E1A9DDA001162E2 /* VibesView+ViewModel.swift in Sources */,
+				BED64D9B2E1A9D6A001162E2 /* RecordsEntity.swift in Sources */,
+				BED64DB72E1A9E76001162E2 /* VibeHeader.swift in Sources */,
+				BED64DB12E1A9E3D001162E2 /* VibesView.swift in Sources */,
+				BED64D6E2E1A9C19001162E2 /* Vibe.swift in Sources */,
+				BED64D8F2E1A9D14001162E2 /* Router.swift in Sources */,
+				BED64D942E1A9D38001162E2 /* Route.swift in Sources */,
+				BED64D802E1A9C87001162E2 /* WidgetStorage.swift in Sources */,
+				BED64DA92E1A9DFE001162E2 /* VibesHeader.swift in Sources */,
+				BED64D852E1A9CB5001162E2 /* VibeDefaultStorage.swift in Sources */,
+				BED64D7A2E1A9C60001162E2 /* DeepLink.swift in Sources */,
+				BED64D732E1A9C3A001162E2 /* Decodable+Extensions.swift in Sources */,
+				BED64D752E1A9C44001162E2 /* Date+Extensions.swift in Sources */,
+				BED64D7E2E1A9C79001162E2 /* AppGroupStorage.swift in Sources */,
+				BED64DB52E1A9E63001162E2 /* VibeNavigation.swift in Sources */,
+				BED64D8B2E1A9CF5001162E2 /* VibeMockService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BED64DBC2E1A9F24001162E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BED64E042E1AA100001162E2 /* VibeWidget+Entry.swift in Sources */,
+				BED64DE62E1A9FD7001162E2 /* AnimatedEmojiText.swift in Sources */,
+				BED64DFB2E1AA096001162E2 /* VibeEntity.swift in Sources */,
+				BED64DFE2E1AA0B4001162E2 /* VibeWidget+EntryView.swift in Sources */,
+				BED64E062E1AA111001162E2 /* VibeWidget.swift in Sources */,
+				BED64DEC2E1AA019001162E2 /* Vibe.swift in Sources */,
+				BED64DF52E1AA070001162E2 /* AppGroupStorage.swift in Sources */,
+				BED64DF92E1AA08C001162E2 /* RecordsEntity.swift in Sources */,
+				BED64E002E1AA0D2001162E2 /* VibeWidget+Provider.swift in Sources */,
+				BED64DF22E1AA046001162E2 /* Decodable+Extensions.swift in Sources */,
+				BED64E022E1AA0E9001162E2 /* VibeWidgetBundle.swift in Sources */,
+				BED64DF02E1AA03A001162E2 /* UserDefaults+Extensions.swift in Sources */,
+				BED64DE82E1A9FE2001162E2 /* EmojiText.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BED64DCF2E1A9F25001162E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BED64DBF2E1A9F24001162E2 /* VibeWidgetExtension */;
+			targetProxy = BED64DCE2E1A9F25001162E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BED64D572E1A9B9A001162E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = SVA96ZC7GV;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BED64D582E1A9B9A001162E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = SVA96ZC7GV;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BED64D5A2E1A9B9A001162E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Vibes/Vibes.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SVA96ZC7GV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Vibes/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lioz.balki.vibes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BED64D5B2E1A9B9A001162E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Vibes/Vibes.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SVA96ZC7GV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Vibes/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lioz.balki.vibes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BED64DD32E1A9F25001162E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = Vibes/VibeWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SVA96ZC7GV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VibeWidget/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VibeWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lioz.balki.vibes.VibeWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BED64DD42E1A9F25001162E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = Vibes/VibeWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SVA96ZC7GV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VibeWidget/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VibeWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lioz.balki.vibes.VibeWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BED64D492E1A9B99001162E2 /* Build configuration list for PBXProject "Vibes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BED64D572E1A9B9A001162E2 /* Debug */,
+				BED64D582E1A9B9A001162E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BED64D592E1A9B9A001162E2 /* Build configuration list for PBXNativeTarget "Vibes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BED64D5A2E1A9B9A001162E2 /* Debug */,
+				BED64D5B2E1A9B9A001162E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BED64DD22E1A9F25001162E2 /* Build configuration list for PBXNativeTarget "VibeWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BED64DD32E1A9F25001162E2 /* Debug */,
+				BED64DD42E1A9F25001162E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BED64D462E1A9B99001162E2 /* Project object */;
+}

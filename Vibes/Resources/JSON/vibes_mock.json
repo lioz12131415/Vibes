@@ -1,0 +1,31 @@
+{
+    "data": [
+        {
+            "emoji": "🧠",
+            "label": "Focus",
+        },
+        {
+            "emoji": "💪",
+            "label": "Power",
+        },
+        {
+            "emoji": "😴",
+            "label": "Chill",
+        },
+        {
+            "emoji": "😂",
+            "label": "Joy",
+        },
+        {
+            "emoji": "🤔",
+            "label": "Curious",
+        }
+    ],
+    "meta": {
+        "authors": [
+            "Lioz Balki"
+        ],
+        "copyright": "Lioz Balki Copyright 2025.",
+    }
+}
+
